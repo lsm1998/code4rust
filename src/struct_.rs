@@ -17,6 +17,8 @@ impl Student {
 
 pub fn student_demo()
 {
-    let s = Student { name: String::from("lsm"), age: 0 };
+    let mut s = Student { name: String::from("lsm"), age: 0 };
+    s.set_name(String::from("hello lsm"));
     println!("{:?}", s.name);
+    // println!("{:?}", s);
 }
