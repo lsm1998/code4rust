@@ -1,10 +1,17 @@
 mod string;
 mod struct_;
 mod map;
+mod file;
+mod variables;
+mod func;
 
 use std::mem;
 
 fn main() {
+    variables::variables_demo();
+
+    func::func_demo();
+
     // Fixed-size array (type signature is superfluous)
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
 
@@ -20,4 +27,6 @@ fn main() {
     struct_::student_demo();
 
     map::map_demo();
+
+    file::file_demo();
 }

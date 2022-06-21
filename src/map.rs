@@ -6,11 +6,15 @@ struct Todo {
 }
 
 impl Todo {
-    fn insert(&mut self, key: String) {
+    fn insert(&mut self, key: String, value: bool) {
         // 在我们的 map 中新增一个新的元素。
         // 我们默认将其状态值设置为 true
-        self.map.insert(key, true);
+        self.map.insert(key, value);
     }
+
+    // fn get(&mut self, key: String) -> bool {
+    //     return self.map.get(key);
+    // }
 
     fn save(self) -> Result<(), std::io::Error> {
         let mut content = String::new();
@@ -24,17 +28,13 @@ impl Todo {
 
 pub fn map_demo()
 {
-    let action = std::env::args().nth(1).expect("Please specify an action");
-    let item = std::env::args().nth(2).expect("Please specify an item");
-
     let mut todo = Todo {
         map: HashMap::new(),
     };
-    if action == "add" {
-        todo.insert(item);
-        match todo.save() {
-            Ok(_) => println!("todo saved"),
-            Err(why) => println!("An error occurred: {}", why),
-        }
-    }
+    todo.insert(String::from("lsm"), true);
+    todo.insert(String::from("mdy"), true);
+    // match todo.save() {
+    //     Ok(_) => println!("todo saved"),
+    //     Err(why) => println!("An error occurred: {}", why),
+    // }
 }
