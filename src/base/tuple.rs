@@ -38,11 +38,14 @@ pub fn tuple_test()
 
     let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
     println!("{:?}", matrix);
+
+    let l = (1, false);
+    let l2 = reverse(l);
+    println!("{},{}", l2.0, l2.1);
 }
 
-// Tuples can be used as function arguments and as return values
+// 反转元组顺序
 pub fn reverse(pair: (i32, bool)) -> (bool, i32) {
-    // `let` can be used to bind the members of a tuple to variables
     let (integer, boolean) = pair;
     (boolean, integer)
 }

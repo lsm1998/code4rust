@@ -1,4 +1,3 @@
-mod struct_;
 mod map;
 mod file;
 mod variables;
@@ -19,9 +18,7 @@ fn main() {
 
     types::file::types_file_demo();
 
-    base::string::string_demo();
-
-    base::slice::slice_demo();
+    base::base_demo();
 
     // Fixed-size array (type signature is superfluous)
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
@@ -32,8 +29,6 @@ fn main() {
     println!("array occupies {} bytes", mem::size_of_val(&xs));
 
     println!("{:?}", _ss);
-
-    struct_::student_demo();
 
     map::map_demo();
 
