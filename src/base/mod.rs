@@ -5,6 +5,7 @@ pub mod slice;
 pub mod structs;
 pub mod enums;
 mod array;
+mod pattern_match;
 
 pub fn base_demo() {
     string::string_demo();
@@ -13,4 +14,5 @@ pub fn base_demo() {
     enums::enums_demo();
     structs::student_demo();
     array::array_demo();
+    pattern_match::pattern_match_demo();
 }

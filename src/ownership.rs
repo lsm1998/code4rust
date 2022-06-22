@@ -20,6 +20,7 @@ pub fn ownership_demo() {
 
     let mut a = String::from("hello");
     change_string(&mut a);
+    print_string(&a);
     println!("{}", a);
 }
 
@@ -32,7 +33,11 @@ fn calculate_length(s: &String) -> usize {
 可变借用
 1.同一作用域，特定数据只能有一个可变借用
 2.可变借用与不可变借用不能同时存在
-*/
+ */
 fn change_string(some_string: &mut String) {
     some_string.push_str(", world");
+}
+
+fn print_string(some_string: &String) {
+    println!("{}", some_string)
 }
