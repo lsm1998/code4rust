@@ -38,7 +38,6 @@ pub fn pattern_match_demo() {
     let v = matches!(v[0], Direction::East);
     println!("{:?}", v);
 
-
     let mut stack = vec![1,2,3];
     // 只要模式匹配就一直进行 while 循环
     while let Some(top) = stack.pop() {

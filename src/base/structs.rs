@@ -1,6 +1,6 @@
 #[derive(Debug)]
 struct Student {
-    name: String,
+    pub name: String,
     age: u8,
 }
 
