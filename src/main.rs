@@ -6,6 +6,7 @@ mod base;
 mod ownership;
 mod r#macro;
 mod types;
+mod generics;
 
 use std::mem;
 
@@ -19,6 +20,8 @@ fn main() {
     types::file::types_file_demo();
 
     base::base_demo();
+
+    generics::generics_demo();
 
     // Fixed-size array (type signature is superfluous)
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
