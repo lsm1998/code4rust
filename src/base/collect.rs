@@ -33,4 +33,10 @@ pub fn collect_demo() {
         println!("{}:{}", k.0, k.1);
     }
     map.remove(&*String::from("英语"));
+
+    let a: i32 = 10;
+    let b: u16 = 100;
+    if a < b as i32 {
+        println!("Ten is less than one hundred.");
+    }
 }
