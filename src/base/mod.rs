@@ -7,6 +7,7 @@ mod enums;
 mod array;
 mod pattern_match;
 mod method;
+mod collect;
 
 pub fn base_demo() {
     string::string_demo();
@@ -17,4 +18,5 @@ pub fn base_demo() {
     array::array_demo();
     pattern_match::pattern_match_demo();
     method::method_demo();
+    collect::collect_demo();
 }
