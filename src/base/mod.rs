@@ -9,6 +9,7 @@ mod pattern_match;
 mod method;
 mod collect;
 mod convert;
+mod print;
 
 pub fn base_demo() {
     string::string_demo();
@@ -21,4 +22,5 @@ pub fn base_demo() {
     method::method_demo();
     collect::collect_demo();
     convert::convert_demo();
+    print::print_demo();
 }
