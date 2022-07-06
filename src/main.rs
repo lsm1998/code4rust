@@ -7,6 +7,7 @@ mod ownership;
 mod r#macro;
 mod types;
 mod generics;
+mod error;
 
 use std::mem;
 
@@ -36,4 +37,6 @@ fn main() {
     map::map_demo();
 
     file::file_demo();
+
+    error::error_demo();
 }
