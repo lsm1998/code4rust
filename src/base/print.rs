@@ -14,7 +14,8 @@ pub fn print_demo() {
     // 使用0填充二进制，宽度为10 => 0b00011011!
     println!("{:#010b}!", 27);
     let v = vec![1, 2, 3];
-    println!("{:p}", v.as_ptr()); // => 0x600002324050
+    // 指针地址
+    println!("{:p}", v.as_ptr());
     let value = get_value();
     println!("{value}");
     // 保留小数点后两位 => 3.14

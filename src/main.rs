@@ -8,6 +8,7 @@ mod r#macro;
 mod types;
 mod generics;
 mod error;
+mod lifecycle;
 
 use std::mem;
 
@@ -39,4 +40,6 @@ fn main() {
     file::file_demo();
 
     error::error_demo();
+
+    lifecycle::lifecycle_demo();
 }

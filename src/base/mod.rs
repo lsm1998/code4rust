@@ -10,6 +10,8 @@ mod method;
 mod collect;
 mod convert;
 mod print;
+mod closure;
+mod iterator;
 
 pub fn base_demo() {
     string::string_demo();
@@ -23,4 +25,6 @@ pub fn base_demo() {
     collect::collect_demo();
     convert::convert_demo();
     print::print_demo();
+    closure::closure_demo();
+    iterator::iterator_demo();
 }
