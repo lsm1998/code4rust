@@ -1,8 +1,7 @@
 comma:= ,
 empty:=
 space:= $(empty) $(empty)
-val:= ${name}
-str:= $(subst $(comma),$(space),$(val))
+str:= $(subst $(comma),$(space),${name})
 
 all:
 	@for i in ${str} ; do \
