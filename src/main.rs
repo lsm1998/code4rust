@@ -9,6 +9,7 @@ mod types;
 mod generics;
 mod error;
 mod lifecycle;
+mod new_type;
 
 use std::mem;
 
@@ -42,4 +43,6 @@ fn main() {
     error::error_demo();
 
     lifecycle::lifecycle_demo();
+
+    new_type::new_type_demo();
 }
