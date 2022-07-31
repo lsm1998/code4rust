@@ -10,6 +10,7 @@ mod generics;
 mod error;
 mod lifecycle;
 mod new_type;
+mod smart_ptr;
 
 use std::mem;
 
@@ -45,4 +46,6 @@ fn main() {
     lifecycle::lifecycle_demo();
 
     new_type::new_type_demo();
+
+    smart_ptr::smart_ptr_demo();
 }
