@@ -11,6 +11,7 @@ mod error;
 mod lifecycle;
 mod new_type;
 mod smart_ptr;
+mod thread;
 
 use std::mem;
 
@@ -48,4 +49,6 @@ fn main() {
     new_type::new_type_demo();
 
     smart_ptr::smart_ptr_demo();
+
+    thread::thread_demo();
 }
